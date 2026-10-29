@@ -4,7 +4,7 @@ title: '#4471 · what the reports show: three problems, not one'
 owner: shiftma
 status: proposed
 reviewed: 2026-10-29
-signature: shiftma
+signature: 'v1.eyJzdWIiOiI0NTU1IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMzMDYzMjAsImV4cCI6MTc5MzM5MjcyMH0.q9qB26Sia4_k0VERwmOYO-UG-lc8m-S-tNK6GUPRhzk'
 ---
 
 <script>
