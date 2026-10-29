@@ -46,6 +46,15 @@
   </tbody>
 </table>
 
+{#each split.groups as g (g.problem)}
+  {#if g.alsoOneDay}
+    <p class="small">
+      <code>{g.problem}</code> counts {g.alsoOneDay} one-day moves where they are filed, by tenant, as the desk
+      counts them. They are the <code>one-day</code> problem too.
+    </p>
+  {/if}
+{/each}
+
 <style>
   .sum { font-size: 1.1rem; }
   .small { color: var(--muted); font-size: 0.85em; }

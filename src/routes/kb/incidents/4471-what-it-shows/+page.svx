@@ -43,7 +43,8 @@ match the locale, or the form must stop guessing.
 Monday 11 May; a client in Lisbon got Tuesday and one in Toronto got Monday; an invite arrived
 before the booking was made. That is a time-zone shift (a date stored or sent at midnight in one
 zone and read in another), not a format bug. The desk read these as one-day moves and footnoted
-them under `parser`; they belong in a ticket of their own.
+them under `parser`; they belong in a ticket of their own. The counts above follow the desk's
+view: these reports stay counted where they are filed, and the one-day ticket counts them again.
 
 ## How the reports were counted
 
@@ -51,8 +52,9 @@ them under `parser`; they belong in a ticket of their own.
 - `parser` and `hint` come from `causeOf` in `causes.ts`: the tenant's locale and booking form,
   not intake's tag. Intake guesses from the reporter's browser, and it is wrong whenever someone
   in a day-first business reports from an `en-US` browser.
-- `one-day` is the desk's own list (`desk-notes.json`). Every other report names two dates that
-  are the same day and month swapped, or says the dates are mixed up.
+- `one-day` is the desk's own list (`desk-notes.json`). Like the desk's table, this page counts
+  those reports under their cause as well. Every other report names two dates that are the same
+  day and month swapped, or says the dates are mixed up.
 
 ## What to do with #4471
 
